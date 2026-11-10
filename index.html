@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUMI TDL - Sistema Terapeuta</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#e0f2fe" />
+    <link rel="apple-touch-icon" href="./icons/yumi-192.png" />
+    <meta name="description" content="Sistema fonoaudiológico interactivo dual con controlador vertical en marco de celular para la especialista y tableta horizontal con el robot YUMI para niños con TDL." />
+    <meta property="og:title" content="YUMI TDL - Sistema Terapeuta" />
+    <meta property="og:description" content="Sistema fonoaudiológico interactivo dual con controlador vertical en marco de celular para la especialista y tableta horizontal con el robot YUMI para niños con TDL." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-100 font-['Outfit','Plus_Jakarta_Sans',sans-serif] text-slate-800 antialiased selection:bg-sky-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
+

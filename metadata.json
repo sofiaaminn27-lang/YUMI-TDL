@@ -1,0 +1,8 @@
+{
+  "name": "Remix TDL FonoRobot - Terapia de Lenguaje Dual",
+  "description": "Sistema fonoaudiológico dual con controlador horizontal para terapeutas y robot proyector interactivo estilo Baymax para estimulación del lenguaje en niños con TDL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
